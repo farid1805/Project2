@@ -16,6 +16,7 @@ def registrar():
                 print(opte())
             elif perm != "si":
                 return("¡Vuelva pronto!...")
+                sys.exit(0)
 
 
 
@@ -43,6 +44,7 @@ def registrar():
             print(opta())
         elif pom != "si":
             return ("¡Vuelva pronto!...")
+            sys.exit(0)
 
 
     else:
@@ -388,7 +390,7 @@ def menu():
 
 def opt():
     print(
-        "¡Bien " + nomb + "!, Ahora...\n¿Deseas consultar algo más? \n1. Créditos \t2. Pensiones \t3. Menú de la semana  \t4. Cubiculos")
+        "¡Bien " + nomb + "!, Ahora...\n¿Deseas consultar algo más?\n1. Créditos\n2. Pensiones\n3. Menú de la semana\n4. Cubiculos\n5. Salir")
     o = int(input("-->"))
     if o == 1:
         print("------------------------CREDITOS------------------------")
@@ -402,6 +404,9 @@ def opt():
     elif o == 4:
         print("------------------------------RESERVACION DE CUBICULOS------------------------------")
         cubiculos()
+    elif o== 5:
+        print("¡Vuelva pronto!...")
+        sys.exit(0)
 
 
 def creditos2():
@@ -409,7 +414,7 @@ def creditos2():
 
 
 def opte():
-    print("¡Bien " + nomb + "!, Ahora...\n¿Qué deseas consultar?\n1. Créditos \t2. Pensiones \t3. Menú de la semana \t4 .Cubiculos")
+    print("¡Bien " + nomb + "!, Ahora...\n¿Qué deseas consultar?\n1. Créditos\n2. Pensiones\n3. Menú de la semana\n4. Cubiculos\n5. Salir")
     k = int(input("-->"))
     if k == 1:
         print("-----------------------------CREDITOS-----------------------------")
@@ -425,9 +430,12 @@ def opte():
     elif k == 4:
         print("------------------------------RESERVACION DE CUBICULOS------------------------------")
         cubiculos()
+    elif k== 5:
+        print("¡Vuelva pronto!...")
+        sys.exit(0)
 
 def opta():
-    print("¡Bien " + nomb + "!, Ahora...\n¿Qué deseas consultar?\n1. Créditos \t2. Pensiones \t3. Menú de la semana \t4 .Cubiculos")
+    print("¡Bien " + nomb + "!, Ahora...\n¿Qué deseas consultar?\n1. Créditos\n2. Pensiones\n3. Menú de la semana\n4. Cubiculos\n5. Salir")
     q = int(input("-->"))
     if q == 1:
         print("-----------------------------CREDITOS-----------------------------")
@@ -441,6 +449,9 @@ def opta():
     elif q == 4:
         print("------------------------------RESERVACION DE CUBICULOS------------------------------")
         cubiculos()
+    elif q== 5:
+        print("¡Vuelva pronto!...")
+        sys.exit(0)
 
 
 cur1 = ["CURSOS DE 1ER CICLO:\na) Matematica I\nb) Fisica I\nc) Intro. a la Ciencia de la computacion\nd) Desafios Globales\ne) Lab. de Comunicacion I\nf) Quimica General\ng) Quimica Experimental"]
